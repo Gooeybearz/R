@@ -473,6 +473,9 @@ print(results_df)
 
 # FEDFUNDS shows Granger Causality for DAUTONASA and DSPI and slight Granger Causality for FAUTONSA
 
+irf_results <- irf(model_var, n.ahead = 4, boot = TRUE)
+plot(irf_results)
+
 # Foreign
 
 # Function to plot forecasts
